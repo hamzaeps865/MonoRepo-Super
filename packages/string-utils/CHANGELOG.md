@@ -1,4 +1,4 @@
-# @hamza865/markdown-converter-super
+# @hamza865/string-utils-super
 
 ## 2.0.0
 
@@ -6,8 +6,7 @@
 
 - 771ac47: uploaded and updated both
 
-## 1.0.1
-
 ### Patch Changes
 
-- small change update
+- d95641f: updated
+- cf744e2: readme file update

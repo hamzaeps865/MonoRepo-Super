@@ -10,5 +10,7 @@
   },
   "dependencies": {
     "marked": "^16.2.1"
-  }
+  },
+  "packageManager": "pnpm@9.0.0"
+  
 }

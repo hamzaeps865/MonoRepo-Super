@@ -1,37 +1,49 @@
+name: Auto Publish Packages
 
-name: Release & Publish
+permissions:
+  contents: write
+  packages: write
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - main
 
 jobs:
   release:
+    name: Release Packages
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      # 1. Checkout repository
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      # 2. Setup Node.js (with npm registry + token)
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: "https://registry.npmjs.org/"
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build packages
-        run: pnpm turbo run build
-
-      - name: Publish Markdown Converter
-        run: pnpm publish --filter=@hamza865/markdown-converter-super --access public
+          registry-url: https://registry.npmjs.org/
+          cache: "pnpm"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish String Utils
-        run: pnpm publish --filter=@hamza865/string-utils-super --access public
+      # 3. Install pnpm
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      # 4. Install dependencies
+      - run: pnpm install --frozen-lockfile
+
+      # 5. Build all packages
+      - run: pnpm -r run build
+
+      # 6. Publish Markdown Converter
+      - run: pnpm publish --filter=@hamza865/markdown-converter-super --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # 7. Publish String Utils
+      - run: pnpm publish --filter=@hamza865/string-utils-super --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

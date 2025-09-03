@@ -3,6 +3,7 @@ name: Auto Publish Packages
 permissions:
   contents: write
   packages: write
+  pull-requests: write
 
 on:
   push:

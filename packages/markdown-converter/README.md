@@ -1,7 +1,9 @@
 # Markdown Converter
 
-Convert Markdown text into HTML easily.
+Easily convert Markdown text to HTML with a simple and efficient API.
 
-## Install
+## Installation
+
 ```bash
 npm install @hamza865/markdown-converter-super
+```

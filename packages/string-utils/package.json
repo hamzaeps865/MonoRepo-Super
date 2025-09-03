@@ -1,22 +1,21 @@
-
-
-
-
 {
   "name": "@hamza865/string-utils-super",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Utility functions for string manipulation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
-  
   "repository": {
     "type": "git",
     "url": "https://github.com/hamzaeps865/monorepo.git"
   },
-  "keywords": ["string", "utils", "text"],
+  "keywords": [
+    "string",
+    "utils",
+    "text"
+  ],
   "author": "hamza",
   "license": "MIT"
 }

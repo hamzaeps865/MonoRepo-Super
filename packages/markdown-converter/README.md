@@ -4,4 +4,4 @@ Convert Markdown text into HTML.
 
 ## Install
 ```bash
-npm install @your-username/markdown-converter
+npm install @hamza865/markdown-converter-super

@@ -1,6 +1,6 @@
 # String Utils
 
-Utility functions for string manipulations.
+Utility functions for string manipulations ..
 
 ## Install
 ```bash

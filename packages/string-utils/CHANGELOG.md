@@ -1,5 +1,12 @@
 # @hamza865/string-utils-super
 
+## 3.0.0
+
+### Major Changes
+
+- 41e6ab5: changing is updated
+- 454d9c6: publish and updated
+
 ## 2.0.0
 
 ### Major Changes

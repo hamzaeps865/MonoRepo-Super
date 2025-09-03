@@ -4,4 +4,4 @@ Utility functions for string manipulations ..
 
 ## Install
 ```bash
-npm install @hamza865/string-utils
+npm install @hamza865/string-utils-super

@@ -1,6 +1,6 @@
 # Markdown Converter
 
-Convert Markdown text into HTML.
+Convert Markdown text into HTML easily.
 
 ## Install
 ```bash

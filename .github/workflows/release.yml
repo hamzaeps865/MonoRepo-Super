@@ -18,7 +18,12 @@ jobs:
       # 1. Checkout repository
       - uses: actions/checkout@v4
 
-      # 2. Setup Node.js (with npm registry + token)
+      # 2. Install pnpm first
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      # 3. Setup Node.js (enable pnpm cache)
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -26,11 +31,6 @@ jobs:
           cache: "pnpm"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      # 3. Install pnpm
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 9
 
       # 4. Install dependencies
       - run: pnpm install --frozen-lockfile

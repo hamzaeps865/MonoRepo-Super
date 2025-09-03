@@ -1,5 +1,11 @@
 # @hamza865/markdown-converter-super
 
+## 4.0.0
+
+### Major Changes
+
+- c3c8e88: updated
+
 ## 3.0.0
 
 ### Major Changes

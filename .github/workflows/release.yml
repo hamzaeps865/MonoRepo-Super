@@ -29,8 +29,6 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org/
           cache: "pnpm"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       # 4. Install dependencies
       - run: pnpm install --frozen-lockfile
@@ -38,12 +36,12 @@ jobs:
       # 5. Build all packages
       - run: pnpm -r run build
 
-      # 6. Publish Markdown Converter
-      - run: pnpm publish --filter=@hamza865/markdown-converter-super --access public
+      # 6. Run Changesets Action
+      - name: Create Release Pull Request or Publish
+        uses: changesets/action@v1
+        with:
+          version: pnpm changeset version
+          publish: pnpm changeset publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      # 7. Publish String Utils
-      - run: pnpm publish --filter=@hamza865/string-utils-super --access public
-        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

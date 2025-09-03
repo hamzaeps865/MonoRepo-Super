@@ -1,6 +1,6 @@
 {
   "name": "@hamza865/markdown-converter-super",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert Markdown text into HTML",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,11 @@
     "type": "git",
     "url": "https://github.com/hamzaeps865/monorepo.git"
   },
-  "keywords": ["markdown", "converter", "html"],
+  "keywords": [
+    "markdown",
+    "converter",
+    "html"
+  ],
   "author": "hamza",
   "license": "MIT",
   "dependencies": {

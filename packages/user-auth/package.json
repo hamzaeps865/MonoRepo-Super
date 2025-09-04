@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
   "name": "@hamza865/user-auth-features",
   "version": "1.0.0",
-=======
-  "name": "@monorepo/user-auth-features",
-  "version": "2.0.0",
->>>>>>> 5e68abe03398007591e935c6a1c9fa5c9935cfd7
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

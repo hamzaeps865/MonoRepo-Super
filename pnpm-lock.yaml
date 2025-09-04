@@ -33,6 +33,8 @@ importers:
 
   packages/string-utils: {}
 
+  packages/user-auth: {}
+
 packages:
 
   '@babel/runtime@7.28.3':

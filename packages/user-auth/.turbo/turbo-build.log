@@ -1,0 +1,4 @@
+
+> @monorepo/user-auth-features@1.0.0 build C:\Users\ART\Desktop\Monorep00\packages\user-auth
+> tsc -p tsconfig.json
+

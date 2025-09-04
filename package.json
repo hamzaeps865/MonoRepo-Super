@@ -8,7 +8,8 @@
     "@changesets/cli": "^2.29.6",
     "@types/node": "^24.3.0",
     "turbo": "^2.0.0",
-    "typescript": "^5.5.0"
+    "typescript": "^5.5.0",
+    "vitest": "^3.2.4"
   },
   "dependencies": {
     "marked": "^16.2.1"

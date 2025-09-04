@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "CommonJS",
+    "module": "ESNext",              // or keep CommonJS if you prefer
+    "moduleResolution": "bundler",   // ✅ or "nodenext" if you want CJS+ESM hybrid
     "strict": true,
     "esModuleInterop": true,
     "declaration": true

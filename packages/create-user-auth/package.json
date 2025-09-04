@@ -1,6 +1,6 @@
 {
   "name": "@hamza865/create-user-auth2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "bin": {
     "create-user-auth": "bin/index.js"

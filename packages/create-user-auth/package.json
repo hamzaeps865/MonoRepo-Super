@@ -1,6 +1,6 @@
 {
   "name": "@hamza865/create-user-auth-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool to generate user auth starter projects",
   "bin": {
     "create-user-auth": "bin/index.js"

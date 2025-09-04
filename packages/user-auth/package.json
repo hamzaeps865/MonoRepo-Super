@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/user-auth-features",
+  "name": "@hamza865/user-auth-features",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

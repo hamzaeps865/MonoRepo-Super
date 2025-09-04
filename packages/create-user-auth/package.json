@@ -1,5 +1,5 @@
 {
-  "name": "@hamza865/create-user-auth2",
+  "name": "@hamza865/create-user-auth",
   "version": "1.0.0",
   "type": "module",
   "bin": {
@@ -7,5 +7,10 @@
   },
   "dependencies": {
     "inquirer": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamza865/monorepo.git",
+    "directory": "packages/create-user-auth"
   }
 }

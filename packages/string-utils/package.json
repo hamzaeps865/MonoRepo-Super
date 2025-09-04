@@ -1,6 +1,6 @@
 {
   "name": "@hamza865/string-utils-super",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Utility functions for string manipulation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

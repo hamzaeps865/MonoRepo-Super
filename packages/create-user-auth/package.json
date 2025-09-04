@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
   "name": "@hamza865/create-user-auth",
   "version": "1.0.0",
-=======
-  "name": "@hamza865/create-user-auth2",
-  "version": "1.0.1",
->>>>>>> 797640da9997fb922cccba9b43145fba76b6fec7
   "type": "module",
   "bin": {
     "create-user-auth": "bin/index.js"

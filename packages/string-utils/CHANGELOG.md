@@ -1,5 +1,11 @@
 # @hamza865/string-utils-super
 
+## 3.0.2
+
+### Patch Changes
+
+- 5b03528: haseeb
+
 ## 3.0.1
 
 ### Patch Changes

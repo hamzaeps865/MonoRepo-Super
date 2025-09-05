@@ -1,5 +1,11 @@
 # @hamza865/string-utils-super
 
+## 3.0.1
+
+### Patch Changes
+
+- dae2b8a: testing done
+
 ## 3.0.0
 
 ### Major Changes
